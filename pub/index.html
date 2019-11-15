@@ -5,37 +5,194 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/responsive-styles.min.css">
-    <title>My Site</title>
+    <title>Test Site</title>
 </head>
 <body>
- <div class="page-wrapper">
-     <header>
-<h1>Hello</h1>
+ <div class="page-wrapper" >
+     <header id="header-main">
+        <h1><span>ui</span>Brush</h1>
+         <input type="checkbox" id="nav-button">
+         <label for="nav-button" class="humburger-btn">
+             <div class="humburger-item"></div>
+         </label>
+         <nav>
+             <ul>
+                 <li><a href="#header-main" class="nav-link">Home</a></li>
+                 <li><a href="#about-us" class="nav-link">About Us</a></li>
+                 <li><a href="#services" class="nav-link">Services</a></li>
+                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                 <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
+             </ul>
+         </nav>
      </header>
      <main>
+         <section id="about-us">
+             <figure class="slide-item">
+                 <div class="img-container">
+                     <div class="slide-msg">
+                         <h3>Welcome To UIBrush</h3>
+                         <h3>We Provide Ultimate Templates</h3>
+                     </div>
+                     <picture>
+                         <source srcset="images/image-main.png" media="(max-width:1340px)">
+                         <img src="images/image-home.png" alt="welcome photo">
+                     </picture>
+                 </div>
+                 <figcaption>
+                     Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit</span>
+                 </figcaption>
+             </figure>
+             <div class="description">
+                 <h2>UIBrush</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, alias atque culpa dignissimos distinctio eligendi enim, explicabo hic id iusto magni necessitatibus Accusamus, alias atque culpa dignissimos distinctio eligendi enim, explicabo hic id iusto magni necessitatibus numquam perspiciatis placeat quae quaerat quia reiciendis! Sed.</p>
+             </div>
+         </section> <!-- End of #about-us section -->
 
-        <ul>
-            <li>
-                <article>
-                    <img src="./images/image1.jpg" alt="iphone11 pro">
-                </article>
-            </li>
-            <li>
-                <article>
-                    <img src="./images/image2.jpg" alt="iphone11 pro">
-                </article>
-            </li>
-            <li>
-                <article>
-                    <img src="./images/image3.jpg" alt="nature">
-                </article>
-            </li>
-        </ul>
+         <section id="services">
+             <ul class="services-wrapper">
+                 <li>
+                     <article>
+                         <i class="fas fa-th-list"></i>
+                         <h3>Innovative Design</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, dicta, dolor, dolorem dolorum ex id laborum natus non numquam obcaecati quas temporibus vel.</p>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <i class="fas fa-code"></i>
+                         <h3>Clean Coding</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, dicta, dolor, dolorem dolorum ex id laborum natus non numquam obcaecati quas temporibus vel.</p>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <i class="fas fa-location-arrow"></i>
+                         <h3>Quick Delivery</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, dicta, dolor, dolorem dolorum ex id laborum natus non numquam obcaecati quas temporibus vel.</p>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <i class="fas fa-phone-alt"></i>
+                         <h3>Best Support</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, dicta, dolor, dolorem dolorum ex id laborum natus non numquam obcaecati quas temporibus vel.</p>
+                     </article>
+                 </li>
+             </ul>
+         </section> <!-- End of #services section -->
+
+         <section id="portfolio">
+             <div class="description">
+                 <h2>Recent Projects</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, alias atque culpa dignissimos.</p>
+             </div>
+             <ul class="portfolio-wrapper">
+                 <li>
+                     <article>
+                         <figure>
+                             <img src="./images/portfolio/img-001.png"
+                                  alt="https://www.example.com/">
+                             <figcaption>
+                                <h3>Portfolio One</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                             </figcaption>
+                         </figure>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <figure>
+                             <img src="./images/portfolio/img-002.png"
+                                  alt="https://www.example.com/">
+                             <figcaption>
+                                 <h3>Portfolio Two</h3>
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </figcaption>
+                         </figure>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <figure>
+                             <img src="./images/portfolio/img-003.png"
+                                  alt="https://www.example.com/">
+                             <figcaption>
+                                 <h3>Portfolio Three</h3>
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </figcaption>
+
+                         </figure>
+                     </article>
+                 </li>
+                 <li>
+                     <article>
+                         <figure>
+                             <img src="./images/portfolio/img-004.png"
+                                  alt="https://www.example.com/">
+                             <figcaption>
+                                 <h3>Portfolio Four</h3>
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </figcaption>
+                         </figure>
+                     </article>
+                 </li>
+             </ul>
+         </section> <!-- End of #portfolio section -->
+         <section id="contact-us">
+             <article class="contact-intro">
+                 <h2>Talk <span>To Us</span></h2>
+                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optionihil impedit quo facilis est et expedita distinctio minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.   </p>
+             </article>
+             <article class="contact-main">
+                 <h2>Contact Us</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore eturet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Lorem ipsum dolor       sit amet, consectetur adipisicing elit, sed do eiusmod tempor  ut labore eturet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+             </article>
+             <div class="map">
+                 <iframe
+                         width="100%"
+                         height="450"
+                         frameborder="0" style="border:0"
+                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBLKkFcvS6WyvPBx7DfgSxu3ocM0aIyvIk
+    &q=235+New+Bridge+St+London+EC4M+7LW" allowfullscreen>
+                 </iframe>
+             </div>
+             <article class="contact-details">
+                 <h2>Contact Details:</h2>
+                 <ul>
+                     <li>(+91) 0975 720 3582</li>
+                     <li>Email@domain.com</li>
+                     <li>No.235, New St, 25th Sector, London, England</li>
+                 </ul>
+             </article>
+             <div class="contact-form">
+                 <form action="">
+                     <input type="text" name="name" id="clientName" placeholder="Name">
+                     <input type="email" name="email" id="clientEmail" placeholder="Email">
+                     <textarea name="message" placeholder="Message" id="clientMessage" cols="30" rows="10"></textarea>
+                     <input type="submit"
+                            value="Submit">
+                 </form>
+             </div>
+         </section> <!-- End of #contact-us section -->
+
      </main>
      <footer>
-
+         <p>Copyright &copy; 2015 Default Value</p>
      </footer>
  </div>
+
+ <script>
+     document.querySelector('#header-main').addEventListener('click', function (e) {
+         console.log(e);
+        if(e.target.className === 'nav-link') {
+            document.querySelector('#nav-button').checked = false;
+
+        }
+     })
+ </script>
+
 </body>
 </html>
