@@ -64,9 +64,10 @@ main {
     padding: 5%;
     position: fixed;
     right: 0;
-    transition: .3s;
+    transition: @transition-duration;
     top: 0;
-    width: 0%;
+    width: 0;
+    z-index: 50;
 
     ul {
       display: none;
@@ -86,20 +87,24 @@ main {
   }
 }
 
-.humburger-btn {
+.hamburger-btn {
+  color: transparent;
   cursor: pointer;
   height: 40px;
   position: absolute;
   right: 1.5rem;
+  text-indent: -1500px;
   top: 1.5rem;
   width: 50px;
   z-index: 100;
 
-  .humburger-item {
+  .hamburger-item {
     background-color: @layout-color-second;
+    display: block;
     height: 5px;
     left: 50%;
     position: absolute;
+    text-indent: 0;
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     width: 45px;
@@ -131,19 +136,18 @@ main {
       background-color: @layout-color-main;
       left: 0;
       width: 100%;
-      z-index: 50;
       ul {
         display: flex;
       }
     }
 
-    & + .humburger-btn {
+    & + .hamburger-btn {
       position: fixed;
 
-      .humburger-item {
+      .hamburger-item {
        background-color: transparent;
         &::before, &::after {
-          background-color: #fff;
+          background-color: @text-color-content-alt;
         }
 
         &::after {
@@ -181,7 +185,7 @@ main {
 
         h3 {
           background-color: rgba(0, 0, 0, 0.5);
-          color: #fff;
+          color: @text-color-content-alt;
           font-size: 1.3rem;
           font-weight: 500;
           margin-bottom: 0.7rem;
@@ -201,7 +205,8 @@ main {
       padding: 2rem;
       text-align: center;
 
-      span {
+      a {
+        color: @text-color-content-alt;
         text-transform: uppercase;
         text-decoration: underline;
       }
@@ -291,6 +296,10 @@ main {
 
   li {
     width: 100%;
+
+    a {
+      text-decoration: none;
+    }
 
     article {
       margin: 0 auto 4rem;
@@ -424,6 +433,11 @@ main {
           content: "\f3c5";
         }
 
+        a {
+          color: @text-color-content;
+          text-decoration: none;
+        }
+
       }
     }
   }
@@ -436,14 +450,20 @@ main {
       margin: 0 auto;
       max-width: 650px;
 
-      input:not([type="submit"]), textarea {
+      label {
+        color: transparent;
+        position: absolute;
+        left: -1500px;
+      }
+
+      input, textarea {
         background-color: #f0f0f0;
         border: 1px solid transparent;
         border-radius: 2px;
         margin-bottom: 0.8rem;
         outline: none;
         padding: 1rem;
-        transition: all 0.5s;
+        transition: all @transition-duration;
 
         &:focus {
           background-color: transparent;
@@ -451,7 +471,7 @@ main {
         }
       }
 
-      input[type="submit"] {
+     button[type="submit"] {
         background-color: @layout-color-main;
         border: none;
         border-radius: 5px;
@@ -460,11 +480,11 @@ main {
         font-size: 1.2rem;
         margin: 0 auto;
         padding: 1rem;
-        transition: all 0.3s;
+        transition: all @transition-duration;
         width: 70%;
 
         &:hover {
-          background-color: darken( @layout-color-main, 5);
+          background-color: darken(@layout-color-main, 10);
         }
       }
     }

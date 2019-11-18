@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/responsive-styles.min.css">
+    <link rel="stylesheet" href="./css/responsive-styles.min.css">
     <title>Test Site</title>
 </head>
 <body>
@@ -15,8 +15,9 @@
      <header id="header-main">
         <h1><a href="#header-main"><span>ui</span>Brush</a></h1>
          <input type="checkbox" id="nav-button">
-         <label for="nav-button" class="humburger-btn">
-             <div class="humburger-item"></div>
+         <label for="nav-button" class="hamburger-btn">
+             Mobile Menu Button<br>
+             <span class="hamburger-item"></span>
          </label>
          <nav>
              <ul>
@@ -37,12 +38,12 @@
                          <h3>We Provide Ultimate Templates</h3>
                      </div>
                      <picture>
-                         <source srcset="images/image-main.png" media="(max-width:1340px)">
-                         <img src="images/image-home.png" alt="welcome photo">
+                         <source srcset="./images/image-main.png" media="(max-width:1340px)">
+                         <img src="./images/image-home.png" alt="welcome photo">
                      </picture>
                  </div>
                  <figcaption>
-                     Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit</span>
+                     Lorem ipsum dolor sit amet, <a href="https://www.example.com/">consectetur adipisicing elit</a>
                  </figcaption>
              </figure>
              <div class="description">
@@ -91,53 +92,61 @@
              </div>
              <ul class="portfolio-wrapper">
                  <li>
-                     <article>
-                         <figure>
-                             <img src="./images/portfolio/img-001.png"
-                                  alt="https://www.example.com/">
-                             <figcaption>
-                                <h3>Portfolio One</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                             </figcaption>
-                         </figure>
-                     </article>
+                     <a target="_blank" href="https://www.example.com/">
+                         <article>
+                             <figure>
+                                 <img src="./images/portfolio/img-001.png"
+                                      alt="https://www.example.com/">
+                                 <figcaption>
+                                     <h3>Portfolio One</h3>
+                                     <p>Lorem ipsum dolor sit amet.</p>
+                                 </figcaption>
+                             </figure>
+                         </article>
+                     </a>
                  </li>
                  <li>
-                     <article>
-                         <figure>
-                             <img src="./images/portfolio/img-002.png"
-                                  alt="https://www.example.com/">
-                             <figcaption>
-                                 <h3>Portfolio Two</h3>
-                                 <p>Lorem ipsum dolor sit amet.</p>
-                             </figcaption>
-                         </figure>
-                     </article>
+                     <a target="_blank" href="https://www.example.com/">
+                         <article>
+                             <figure>
+                                 <img src="./images/portfolio/img-002.png"
+                                      alt="https://www.example.com/">
+                                 <figcaption>
+                                     <h3>Portfolio Two</h3>
+                                     <p>Lorem ipsum dolor sit amet.</p>
+                                 </figcaption>
+                             </figure>
+                         </article>
+                     </a>
                  </li>
                  <li>
-                     <article>
-                         <figure>
-                             <img src="./images/portfolio/img-003.png"
-                                  alt="https://www.example.com/">
-                             <figcaption>
-                                 <h3>Portfolio Three</h3>
-                                 <p>Lorem ipsum dolor sit amet.</p>
-                             </figcaption>
+                     <a target="_blank" href="https://www.example.com/">
+                         <article>
+                             <figure>
+                                 <img src="./images/portfolio/img-003.png"
+                                      alt="https://www.example.com/">
+                                 <figcaption>
+                                     <h3>Portfolio Three</h3>
+                                     <p>Lorem ipsum dolor sit amet.</p>
+                                 </figcaption>
 
-                         </figure>
-                     </article>
+                             </figure>
+                         </article>
+                     </a>
                  </li>
                  <li>
-                     <article>
-                         <figure>
-                             <img src="./images/portfolio/img-004.png"
-                                  alt="https://www.example.com/">
-                             <figcaption>
-                                 <h3>Portfolio Four</h3>
-                                 <p>Lorem ipsum dolor sit amet.</p>
-                             </figcaption>
-                         </figure>
-                     </article>
+                     <a target="_blank" href="https://www.example.com/">
+                         <article>
+                             <figure>
+                                 <img src="./images/portfolio/img-004.png"
+                                      alt="https://www.example.com/">
+                                 <figcaption>
+                                     <h3>Portfolio Four</h3>
+                                     <p>Lorem ipsum dolor sit amet.</p>
+                                 </figcaption>
+                             </figure>
+                         </article>
+                     </a>
                  </li>
              </ul>
          </section> <!-- End of #portfolio section -->
@@ -164,18 +173,20 @@
                      <article class="contact-details">
                          <h2>Contact Details:</h2>
                          <ul>
-                             <li>(+91) 0975 720 3582</li>
-                             <li>Email@domain.com</li>
-                             <li>No.235, New St, 25th Sector, London, England</li>
+                             <li><a href="tel:+9109757203582">(+91) 0975 720 3582</a></li>
+                             <li><a href="mailto:email@domain.com">Email@domain.com</a></li>
+                             <li><a target="_blank" href="https://www.google.com/maps?q=No.235,+New+St,+25th+Sector,+London,+England&biw=1920&bih=976&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiVk7_83_PlAhUymIsKHTWFCjoQ_AUIDygC">No.235, New St, 25th Sector, London, England</a></li>
                          </ul>
                      </article>
                      <div class="contact-form">
                          <form action="">
-                             <input type="text" name="name" id="clientName" placeholder="Name">
-                             <input type="email" name="email" id="clientEmail" placeholder="Email">
+                             <label for="clientName">Name</label>
+                             <input type="text" name="name" id="clientName" placeholder="Name" />
+                             <label for="clientEmail">Email</label>
+                             <input type="email" name="email" id="clientEmail" placeholder="Email" />
+                             <label for="clientMessage">Your Massage</label>
                              <textarea name="message" placeholder="Message" id="clientMessage" cols="30" rows="10"></textarea>
-                             <input type="submit"
-                                    value="Submit">
+                            <button type="submit">Submit</button>
                          </form>
                      </div>
                  </div>
