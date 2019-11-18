@@ -41,13 +41,16 @@ main {
   padding: 5rem 1rem;
 }
 #header-main h1 {
-  color: #484848;
   font-family: "MyriadPro-Regular";
   font-size: 4rem;
   font-weight: lighter;
   text-align: center;
 }
-#header-main h1 span {
+#header-main h1 a {
+  color: #484848;
+  text-decoration: none;
+}
+#header-main h1 a span {
   color: #f36b47;
   text-transform: uppercase;
 }
@@ -494,17 +497,12 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: -3rem;
     width: 100%;
   }
   #services .services-wrapper li {
     flex-basis: 36%;
-    margin: 0;
-  }
-  #services .services-wrapper li:nth-child(2n) {
-    margin-bottom: 3rem;
-  }
-  #services .services-wrapper li:last-child {
-    margin: 0;
+    margin: 0 0 3rem;
   }
   #services .services-wrapper li article {
     padding: 1rem 0;
@@ -627,9 +625,6 @@ footer p {
   #services .services-wrapper li {
     flex-basis: 22%;
   }
-  #services .services-wrapper li:nth-child(2n) {
-    margin-bottom: 0;
-  }
   #portfolio {
     padding: 2rem 6% 1rem;
   }
@@ -660,20 +655,22 @@ footer p {
   }
   #contact-us .contact-block .contact-details-block .contact-details {
     padding: 0 0 0 3rem;
+    text-align: left;
   }
   #contact-us .contact-block .contact-details-block .contact-details h2 {
-    margin: 0 auto 3rem;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
   }
   #contact-us .contact-block .contact-details-block .contact-details ul {
     align-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 100%;
+    margin-bottom: 2rem;
   }
   #contact-us .contact-block .contact-details-block .contact-details ul li {
-    font-size: 1.4rem;
-    flex-basis: 100%;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-left: 60px;
   }
   #contact-us .contact-block .contact-details-block .contact-details ul li:last-child {
     order: 0;
@@ -683,11 +680,12 @@ footer p {
   #contact-us .contact-block .contact-details-block .contact-form {
     padding: 0 0 0 3rem;
   }
-  #contact-us .contact-block .contact-details-block .contact-form form {
-    max-width: 100%;
+  #contact-us .contact-block .contact-details-block .contact-form form input:not([type="submit"]) {
+    max-width: 60%;
   }
   #contact-us .contact-block .contact-details-block .contact-form form input[type="submit"] {
-    margin: 1.8rem auto;
+    margin: 0.5rem 0 0;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=responsive-styles.css.map */

@@ -1,0 +1,128 @@
+@media screen and (min-width: @home-size) {
+
+  #header-main {
+    padding: 2rem @section-padding-home;
+  }
+
+  #about-us {
+    .slide-item {
+      .img-container {
+        .slide-msg {
+          h3 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    padding: 3rem @section-padding-home 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  #services {
+    padding: 2rem @section-padding-home 1rem;
+
+    .services-wrapper {
+      li {
+        flex-basis: 22%;
+      }
+    }
+  }
+
+  #portfolio {
+    padding: 2rem @section-padding-home 1rem;
+  }
+
+  .portfolio-wrapper {
+
+    li {
+      flex-basis: 22%;
+
+      article {
+
+        figure {
+
+          figcaption {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-us {
+
+    .contact-intro {
+      padding: 5rem @section-padding-home;
+    }
+
+    .contact-main {
+      padding: 4rem @section-padding-home 1rem;
+    }
+
+    .contact-block {
+      padding: 3rem @section-padding-home;
+      display: flex;
+      flex-direction: row;
+
+      .map {
+        flex: 1 0 45%;
+        height: auto;
+        padding: 0;
+      }
+
+      .contact-details-block {
+        flex: 1 0 45%;
+
+        .contact-details {
+          padding: 0 0 0 3rem;
+          text-align: left;
+
+          h2 {
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+          }
+
+          ul {
+            align-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            li {
+              flex-basis: 50%;
+              max-width: 50%;
+              padding-left: 60px;
+
+              &:last-child {
+                order: 0;
+                flex-basis: 100%;
+                margin: 0;
+              }
+            }
+          }
+        }
+        .contact-form {
+          padding: 0 0 0 3rem;
+
+          form {
+
+            input:not([type="submit"]) {
+              max-width: 60%;
+            }
+
+            input[type="submit"] {
+              margin: 0.5rem 0 0;
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
